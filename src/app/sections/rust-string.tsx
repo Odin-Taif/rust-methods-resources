@@ -25,9 +25,9 @@ const methods = [
 ];
 
 export default function RustStringMethods() {
-    const [copied, setCopied] = useState(null);
+    const [copied, setCopied] = useState<number | null>(null);
 
-    const handleCopy = (code, index) => {
+    const handleCopy = (code: string, index: number) => {
         navigator.clipboard.writeText(code);
         setCopied(index);
         setTimeout(() => setCopied(null), 1000);
