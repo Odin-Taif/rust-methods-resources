@@ -24,7 +24,7 @@ const methods = [
     { name: "join", code: "let joined = vec![\"a\", \"b\"].join(\",\");", description: "Joins multiple strings with a separator." },
 ];
 
-export default function RustStringMethods() {
+export function RustStringMethods() {
     const [copied, setCopied] = useState<number | null>(null);
 
     const handleCopy = (code: string, index: number) => {

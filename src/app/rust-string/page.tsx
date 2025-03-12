@@ -1,4 +1,5 @@
-import RustStringMethods from "../sections/rust-string";
+import { RustStringMethods } from "../sections";
+
 
 
 export default function Page() {
